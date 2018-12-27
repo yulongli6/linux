@@ -1,3 +1,10 @@
+
+threadpool:threadpool.cpp
+	g++ -std=c++11 $^ -o $@ -lpthread
+rwlock:rwlock.cpp
+	g++ -std=c++11 $^ -o $@ -lpthread
+sem2:sem2.cpp
+	g++ -std=c++11 $^ -o $@ -lpthread
 productor_consumer:productor_consumer.cpp
 	g++ -std=c++11 $^ -o $@ -lpthread
 cond:cond.c
